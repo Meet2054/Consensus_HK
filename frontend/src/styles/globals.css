@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+} */
+.press-start-2p-regular {
+  font-family: "Press Start 2P", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #022926; /* Replace with your desired color */
+  margin: 0;
+  padding: 0;
+}
+@keyframes bounceAndRainbow {
+  0%, 100% {
+    transform: translateY(-80%);
+    background-position: 0% 50%;
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateY(0);
+    background-position: 100% 50%;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.rainbow-tail {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 300% 300%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: bounceAndRainbow 3s infinite ease-in-out;
+}
+
+/* Medium screen stroke */
+@media (min-width: 700px) {
+  .stroke-text-md {
+    -webkit-text-stroke: 5px white;
+  }
+}
+
+.stroke-text {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Gradient Text */
+.rainbow-gradient {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 300% 300%; /* Enlarged for smooth animation */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 3s infinite ease-in-out; /* Apply the animation */
+}
+
